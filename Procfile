@@ -1,1 +1,1 @@
-web: node index.js
+web: node ./push/index.js
