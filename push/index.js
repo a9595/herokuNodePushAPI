@@ -13,7 +13,7 @@ app.set('views', '/views');
 app.set('view engine', 'ejs');
 
 app.get('/', function (request, response) {
-    response.render('pages/index');
+    response.sendStatus(200);
 });
 
 
