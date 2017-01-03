@@ -1,9 +1,6 @@
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
-
-
-// FCM
 var FCM = require('fcm-node');
 
 
@@ -51,6 +48,7 @@ app.post('/notification', function (req, res) {
     res.send("notif");
 
 });
+
 // routes
 // var index = require('./routes/index');
 // app.use('/', index);
