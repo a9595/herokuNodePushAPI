@@ -39,13 +39,13 @@ app.post('/notification', function (req, res) {
     fcm.send(message, function (err, response) {
         if (err) {
             console.log("Error!!!", err.message);
+            res.sendStatus(200);
         } else {
             console.log("Success!!");
+            res.sendStatus(200);
         }
     });
 
-
-    res.send("notif");
 
 });
 
