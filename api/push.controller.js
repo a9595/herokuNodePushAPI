@@ -1,33 +1,6 @@
-var express = require('express');
-var app = express();
-var bodyParser = require('body-parser');
 var FCM = require('fcm-node');
-var routes = require('../api/routes')
-routes(app);
 
-
-app.set('port', (process.env.PORT || 5000));
-
-app.use(express.static('/public'));
-
-// views is directory for all template files
-app.set('views', '/views');
-app.set('view engine', 'ejs');
-
-
-// routes
-// var index = require('./routes/index');
-// app.use('/', index);
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: false}));
-
-
-app.get('/', function (request, response) {
-    response.sendStatus(200);
-});
-
-
-app.post('/notification', function (req, res) {
+exports.push = (req, res) => {
     console.log("Request body = ", req.body);
 
     var deviceTokenEmulator = "fs5O5HoGKok:APA91bGnj2dKlQ0QfFnCtRU9LvhQyTbWnnw5PFLqzR6emb7r1hTCuZiD6CnLJ7ntu9wts-hZXBSkjH8A1n6bsTHqzmeyznN9pbwO1I88co-GPKsrT5F_X6P3hguA1QcZzZTVWYddXqac"
@@ -58,9 +31,4 @@ app.post('/notification', function (req, res) {
         }
     });
 
-
-});
-
-app.listen(app.get('port'), function () {
-    console.log('Node app is running on port', app.get('port'));
-});
+};
