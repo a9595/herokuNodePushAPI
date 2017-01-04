@@ -12,6 +12,14 @@ app.use(express.static('/public'));
 app.set('views', '/views');
 app.set('view engine', 'ejs');
 
+
+// routes
+// var index = require('./routes/index');
+// app.use('/', index);
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: false}));
+
+
 app.get('/', function (request, response) {
     response.sendStatus(200);
 });
@@ -50,13 +58,6 @@ app.post('/notification', function (req, res) {
 
 
 });
-
-// routes
-// var index = require('./routes/index');
-// app.use('/', index);
-app.use(bodyParser.json());
-
-app.use(bodyParser.urlencoded({extended: false}));
 
 app.listen(app.get('port'), function () {
     console.log('Node app is running on port', app.get('port'));
