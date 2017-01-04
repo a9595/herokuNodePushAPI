@@ -43,9 +43,7 @@ app.post('/notification', function (req, res) {
             title: "title",
             body: req.body
         },
-        data: {
-            data: req.body
-        }
+        data: req.body
     };
 
     fcm.send(message, function (err, response) {
