@@ -2,7 +2,11 @@ var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
 var FCM = require('fcm-node');
-var routes = require('../api/routes')
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: false}));
+
+var routes = require('../api/routes');
 routes(app);
 
 
@@ -18,15 +22,14 @@ app.set('view engine', 'ejs');
 // routes
 // var index = require('./routes/index');
 // app.use('/', index);
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: false}));
+
 
 
 app.get('/', function (request, response) {
     response.sendStatus(200);
 });
 
-
+/*
 app.post('/notification', function (req, res) {
     console.log("Request body = ", req.body);
 
@@ -36,8 +39,8 @@ app.post('/notification', function (req, res) {
 
     var fcm = new FCM(serverKey);
 
-    var mobile_tokens = [];
-    mobile_tokens.push(deviceToken5X);
+    // var mobile_tokens = [];
+    // mobile_tokens.push(deviceToken5X);
 
     var message = {
         to: deviceToken5X,
@@ -59,7 +62,7 @@ app.post('/notification', function (req, res) {
     });
 
 
-});
+});*/
 
 app.listen(app.get('port'), function () {
     console.log('Node app is running on port', app.get('port'));
