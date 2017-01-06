@@ -19,7 +19,7 @@ exports.push = (req, res) => {
         to: tokenBody,
         notification: {
             title: "Your order is ready",
-            body: "Your secret code: "
+            body: "Your secret code: ", secretCode
         },
         data: req.body
     };
