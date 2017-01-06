@@ -19,7 +19,7 @@ exports.push = (req, res) => {
         to: tokenBody,
         notification: {
             title: "Your order is ready",
-            body: "Your secret code: ", secretCode,
+            body: "Your secret code: "
         },
         data: req.body
     };
@@ -27,9 +27,10 @@ exports.push = (req, res) => {
     fcm.send(message, function (err, response) {
         if (err) {
             console.log("Error!!!", err.message);
+            console.error(err);
             res.sendStatus(500);
         } else {
-            console.log("Success!!");
+            console.log("Successfully sent with response: ", response);
             res.sendStatus(200);
         }
     });

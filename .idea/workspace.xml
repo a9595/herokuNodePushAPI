@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f746675b-b9d4-413b-9275-77ad358c0489" name="Default" comment="Added dynamic token.&#10;Added firebase-admin">
+    <list default="true" id="f746675b-b9d4-413b-9275-77ad358c0489" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/push.controller.js" afterPath="$PROJECT_DIR$/api/push.controller.js" />
     </list>
@@ -81,8 +81,8 @@
       <file leaf-file-name="push.controller.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/push.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="43" lean-forward="false" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
+            <state relative-caret-position="340">
+              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -362,7 +362,7 @@
       <workItem from="1483558079601" duration="3982000" />
       <workItem from="1483621660631" duration="1343000" />
       <workItem from="1483719713843" duration="2465000" />
-      <workItem from="1483731583956" duration="3159000" />
+      <workItem from="1483731583956" duration="3715000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1483307657237</created>
@@ -427,11 +427,18 @@
       <option name="project" value="LOCAL" />
       <updated>1483733834605</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Changed body notification">
+      <created>1483736938569</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1483736938569</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18015000" />
+    <option name="totallyTimeSpent" value="18571000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -509,10 +516,20 @@
     <MESSAGE value="added data" />
     <MESSAGE value="Andrew's help" />
     <MESSAGE value="Added dynamic token.&#10;Added firebase-admin" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added dynamic token.&#10;Added firebase-admin" />
+    <MESSAGE value="Changed body notification" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed body notification" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/api/push.controller.js</url>
+          <line>28</line>
+          <properties />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -907,8 +924,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/push.controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="43" lean-forward="false" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
+        <state relative-caret-position="340">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
         </state>
       </provider>
