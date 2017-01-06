@@ -12,14 +12,14 @@ exports.push = (req, res) => {
     // mobile_tokens.push(deviceToken5X);
 
     var tokenBody = req.body.token;
-    var secretCode = req.body.secretCode;
-    secretCode = "Your secret code: " + secretCode;
+    var secretCode = "Your secret code: " + req.body.secretCode;
     console.log("Token = ", tokenBody, "; Secret code = ", secretCode);
 
+    let title = "Your order is ready";
     var message = {
         to: tokenBody,
         notification: {
-            title: "Your order is ready",
+            title: title,
             body: secretCode
         },
         data: req.body
