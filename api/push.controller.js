@@ -13,13 +13,14 @@ exports.push = (req, res) => {
 
     var tokenBody = req.body.token;
     var secretCode = req.body.secretCode;
+    secretCode = "Your secret code: " + secretCode;
     console.log("Token = ", tokenBody, "; Secret code = ", secretCode);
 
     var message = {
         to: tokenBody,
         notification: {
             title: "Your order is ready",
-            body: "Your secret code: ", secretCode
+            body: secretCode
         },
         data: req.body
     };

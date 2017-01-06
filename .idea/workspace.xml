@@ -81,8 +81,8 @@
       <file leaf-file-name="push.controller.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/push.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state relative-caret-position="107">
+              <caret line="16" column="42" lean-forward="true" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -362,7 +362,7 @@
       <workItem from="1483558079601" duration="3982000" />
       <workItem from="1483621660631" duration="1343000" />
       <workItem from="1483719713843" duration="2465000" />
-      <workItem from="1483731583956" duration="3715000" />
+      <workItem from="1483731583956" duration="4389000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1483307657237</created>
@@ -434,11 +434,25 @@
       <option name="project" value="LOCAL" />
       <updated>1483736938569</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Body fix try#2">
+      <created>1483737536688</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1483737536688</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Added secret code">
+      <created>1483738075086</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1483738075086</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18571000" />
+    <option name="totallyTimeSpent" value="19245000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -517,14 +531,16 @@
     <MESSAGE value="Andrew's help" />
     <MESSAGE value="Added dynamic token.&#10;Added firebase-admin" />
     <MESSAGE value="Changed body notification" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed body notification" />
+    <MESSAGE value="Body fix try#2" />
+    <MESSAGE value="Added secret code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added secret code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/api/push.controller.js</url>
-          <line>28</line>
+          <line>29</line>
           <properties />
         </line-breakpoint>
       </breakpoints>
@@ -924,8 +940,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/push.controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state relative-caret-position="107">
+          <caret line="16" column="42" lean-forward="true" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
           <folding />
         </state>
       </provider>
